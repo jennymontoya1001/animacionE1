@@ -1,0 +1,46 @@
+#cuadrado{
+    width: 200px;
+    height: 200px;
+    background: palevioletred;
+    position: relative;
+    animation-name: myAnimation; /*nombre de la animación*/
+    animation-duration: 4s; /*duración*/
+    animation-direction: reverse; /*reversa la animación*/
+    animation-timing-function:  ease; /*
+    linear se mueve a la misma velocidad
+    ease arranca lento y termina rápido*/
+    animation-iteration-count: infinite /*
+    2 ejecuta 2 veces la animación
+    con infinite se repite hasta el infinito y más allá*/;
+}
+
+
+@keyframes myAnimation{
+    /*no ha arrancado la animación*/
+    0%{
+        background: palevioletred;
+        left: 0px; /*no se mueva*/
+        top: 0px;
+    }
+    25%{
+        background: palegreen;
+        left: 300px;
+        top: 0;
+    }
+    50%{
+        background: purple;
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        background: blue;
+        left: 0px;
+        top: 300px;
+    }
+    100%{
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
